@@ -1,0 +1,7 @@
+<h1><%= @sighting.location %></h1>
+
+<p>Species: <%= @sighting.species.name %> </p>
+<p>Date: <%= @sighting.date %> </p>
+<p>Time: <%= @sighting.time %> </p>
+
+<p><a href="/sighting/<%= @sighting.id %>/edit">Edit Sighting</a></p>

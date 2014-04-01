@@ -1,0 +1,13 @@
+<h1>SPOTTED!</h1>
+
+<form action="/species/<%= @sighting.species.id %>/sighting" method="post">
+  <label for="sighting_location">Location</label>
+  <input id="sighting_location" name="location" type="text">
+  <label for="sighting_date">Date</label>
+  <input id="sighting_date" name="date" type="text">
+  <label for="sighting_time">Time</label>
+  <input id="sighting_time" name="time" type="text">
+  <button>Add Sighting</button>
+</form>
+
+<p><a href="/species">JK Didn't Spot a Species LOL</a></p>

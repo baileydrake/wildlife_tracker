@@ -1,5 +1,18 @@
 <h1><%= @species.name %></h1>
 
+<h3>Recent Spottings!</h3>
+<ul>
+  <% @species.sightings.each do |sightings| %>
+    <li><a href="/species/<%= @species.id %>/sighting/<%= sightings.id %>"><%= sightings.location %>, <%= (sightings.date).strftime("%m/%d/%Y") %> <%= sightings.time.strftime("%H:%M") %></a></li>
+  <% end %>
+</ul>
+</br>
+</br>
+
+
+
+<p><a href="/species/<%= @species.id %>/sighting/new">I Saw One!</a></p>
+
 <p><a href="/species/<%= @species.id %>/edit">Edit</a></p>
 <p><a href="/species/<%= @species.id %>"
       data-confirm="You sure?"
@@ -7,4 +20,5 @@
       rel="nofollow">Delete</a></p>
 
 <p><a href="/species">Return to species listing</a></p>
+
 
