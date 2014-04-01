@@ -1,0 +1,9 @@
+<h1>WildLife Tracker</h1>
+
+<ul>
+  <% @species.each do |species | %>
+  <li><%= species.name %></li>
+  <% end %>
+</ul>
+
+<p><a href="/species/new">I saw a new species!</a></p>
