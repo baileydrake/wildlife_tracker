@@ -10,4 +10,19 @@
  *
  *= require_self
  *= require_tree .
+
  */
+
+ h1 {
+color: green;
+ }
+
+p {
+  color: brown;
+  text-align: left
+}
+
+ul {
+  color: brown;
+}
+
